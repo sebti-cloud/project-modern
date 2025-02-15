@@ -1,0 +1,58 @@
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.promotions ul li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  right: 50%;
+  font-size: x-large;
+  margin-right: 3%;
+  FONT-WEIGHT: 600;
+}
+
+.promotions ul li button {
+  background-color: red;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  font-size: medium;
+  FONT-WEIGHT: 400;
+  margin-left: 18px;
+}
+
+.promotions ul  {
+  background-color: blanchedalmond;
+display: flex;
+justify-content: center;
+}
+div {
+  margin-bottom: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,10 @@
+.low-stock {
+    background-color: #ffcccc;
+  }
+  
+  .low-stock-alert {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  

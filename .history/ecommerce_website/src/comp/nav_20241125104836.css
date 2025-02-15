@@ -1,0 +1,20 @@
+*
+
+{
+    margin: 0;
+    padding : 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.header
+{
+    width: 100%;
+}
+.header .top_header
+{
+    max-width:  100%;
+    display: flex;
+    padding: 10px 10px;
+    background: #f6f7f8;
+
+}

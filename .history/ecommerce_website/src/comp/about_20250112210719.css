@@ -1,0 +1,66 @@
+.about-container {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+}
+
+.about-container h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-section {
+    margin-bottom: 40px;
+}
+
+.about-section h2 {
+    color: #3498db;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.about-section p, .about-section ul {
+    color: #34495e;
+    line-height: 1.6;
+}
+
+.about-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-section ul li {
+    margin-bottom: 10px;
+}
+
+.about-section ul li strong {
+    color: #008323;
+    text-decoration: underline;
+}
+.cart-icon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #ff729d;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  .cart-icon svg {
+    font-size: 28px; /* Augmenter la taille de l'icône */
+  }
+  
+  .cart-count {
+    margin-left: 5px;
+    font-size: 18px; /* Augmenter la taille du compteur */
+    font-weight: bold;
+  }
+  

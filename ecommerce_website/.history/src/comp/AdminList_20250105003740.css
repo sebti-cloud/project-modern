@@ -1,0 +1,82 @@
+.admin-list-container {
+    max-width: 800px;
+    margin: auto;
+    margin-top: 15px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.admin-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.admin-form input,
+.admin-form select {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.add-button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-button:hover {
+    background-color: #45a049;
+}
+
+.admin-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.admin-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.admin-details {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admin-name,
+.admin-email,
+.admin-username,
+.admin-phone,
+.admin-role {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.admin-role select {
+    padding: 5px;
+}
+
+.delete-button {
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: darkred;
+}

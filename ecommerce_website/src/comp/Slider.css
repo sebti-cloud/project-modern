@@ -1,0 +1,18 @@
+.slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .slide {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .slide img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  

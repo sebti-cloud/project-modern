@@ -1,0 +1,105 @@
+.delivery {
+    width: 100%;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.banner {
+    text-align: center;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 40px 0;
+    margin-bottom: 40px;
+}
+
+.banner h2 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.banner p {
+    font-size: 16px;
+}
+
+.options, .tracking, .faq, .contact {
+    margin-top: 40px;
+}
+
+.options h3, .tracking h3, .faq h3, .contact h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 10px;
+    color: #007BFF;
+}
+
+.options ul, .faq ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.options li, .faq li {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.options li:hover, .faq li:hover {
+    background-color: #007BFF;
+    border-color: #0056b3;
+    color: #fff;
+}
+
+.options li h4, .faq li h4 {
+    font-size: 22px;
+    margin: 0 0 10px;
+}
+
+.tracking input {
+    padding: 10px;
+    width: calc(100% - 150px);
+    margin-right: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.tracking button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.tracking button:hover {
+    background-color: #0056b3;
+}
+
+.tracking-info {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+.contact p {
+    margin: 0;
+}

@@ -1,0 +1,32 @@
+*
+{
+    margin :0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.footer
+{
+    width: 100%;
+    padding: 30px 40px;
+    background: #f6f6f6;
+}
+.footer .container
+{
+    display: flex;
+    max-width: 100%;
+}
+.footer .container .left-box
+{
+    width: 30%;
+    padding: 20px 20px;
+    border-right: 2px solid #b8b7b7;
+}
+.footer .container .left-box .box 
+{
+    display: flex;
+    padding: 10px 20px;
+    margin-top: 15px;
+
+}
+.footer .container .left-box .box 

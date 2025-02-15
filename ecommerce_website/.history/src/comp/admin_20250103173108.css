@@ -1,0 +1,407 @@
+/* Style pour la navigation */
+.admin-dashboard nav {
+    background-color: #4CAF50;
+    padding: 15px;
+}
+
+.admin-dashboard nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.admin-dashboard nav ul li {
+    margin: 0 10px;
+}
+
+.admin-dashboard nav ul li a {
+    color: #232323;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.admin-dashboard nav ul li a:hover {
+    color: #f2f2f2;
+}
+
+/* Style général pour l'interface admin */
+.admin-dashboard {
+    font-family: Arial, sans-serif;
+    color: #34495e;
+    margin: 20px;
+}
+
+h1,
+h2 {
+    margin-top: 15px;
+    color: #e74c3c;
+    border-bottom: 2px ;
+    padding-bottom: 5px;
+}
+.add_admin{
+    margin-top: 15px;
+    color: #2c3e50;
+    border-bottom: 2px ;
+    padding-bottom: 5px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+button.validate {
+    background-color: #27ae60;
+    /* Vert pour Validate */
+}
+
+button.delete {
+    background-color: #e74c3c;
+    /* Rouge pour Delete */
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+button.validate:hover {
+    background-color: #2ecc71;
+    /* Vert plus clair au survol */
+}
+
+button.delete:hover {
+    background-color: #c0392b;
+    /* Rouge plus foncé au survol */
+}
+
+/* Style des formulaires */
+form input[type="text"],
+form input[type="number"],
+form input[type="file"],
+form input[type="password"],
+form select[name="role"]{
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: calc(33% - 20px);
+}
+
+form button {
+    background-color: #27ae60;
+    margin-top: 10px;
+}
+
+form button:hover {
+    background-color: #2ecc71;
+}
+
+/* Style des tableaux */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table thead {
+    background-color: #2c3e50;
+    color: white;
+}
+
+table th,
+table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tbody tr:hover {
+    background-color: #eaeaea;
+}
+
+table img {
+    border-radius: 5px;
+}
+
+/* Style des messages */
+.alert-success {
+    color: #27ae60;
+}
+
+.alert-danger {
+    color: #e74c3c;
+}
+
+.liked-products-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.liked-products-table th,
+.liked-products-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+
+
+.product-image {
+    width: 50px;
+    height: 50px;
+}
+
+.delete-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.delete-button:hover {
+    background-color: #ff1a1a;
+}
+
+.products-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.products-table th,
+.products-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.products-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.product-image {
+    width: 50px;
+    height: 50px;
+}
+
+.edit-button,
+.delete-button {
+    background-color: #4CAF50;
+    /* Green */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.edit-button {
+    margin-right: 5px;
+}
+
+.delete-button {
+    background-color: #ff4d4d;
+    /* Red */
+}
+
+.edit-button:hover {
+    background-color: #45a049;
+}
+
+.delete-button:hover {
+    background-color: #ff1a1a;
+}
+
+.edit-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.edit-form input {
+    margin: 5px;
+    padding: 8px;
+    width: 200px;
+}
+
+.update-button,
+.cancel-button {
+    margin: 5px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.update-button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.cancel-button {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+.update-button:hover {
+    background-color: #45a049;
+}
+
+.cancel-button:hover {
+    background-color: #ff1a1a;
+}
+
+.products-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.products-table th,
+.products-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.products-table th {
+    background-color: #2980b9;
+    font-weight: bold;
+}
+
+.product-image {
+    width: 50px;
+    height: 50px;
+}
+
+.edit-button,
+.delete-button,
+.type-select {
+    background-color: #4CAF50;
+    /* Green */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.edit-button {
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+.delete-button {
+    background-color: #ff4d4d;
+    /* Red */
+}
+
+.edit-button:hover {
+    background-color: #45a049;
+}
+
+.delete-button:hover {
+    background-color: #ff1a1a;
+}
+
+.edit-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.edit-form input,
+.edit-form select {
+    margin: 5px;
+    padding: 8px;
+    width: 200px;
+}
+
+.update-button,
+.cancel-button {
+    margin: 5px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.update-button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.cancel-button {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+.update-button:hover {
+    background-color: #45a049;
+}
+
+.cancel-button:hover {
+    background-color: #ff1a1a;
+}
+
+form .details{
+    padding: 10px;
+    margin-top: 10px;
+}
+
+/* admin.css */
+.button {
+    padding: 5px 10px;
+    margin-right: 10px; /* Espace entre les boutons */
+    border: none;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+}
+
+.button.validate {
+    background-color: green;
+}
+
+.button.delete {
+    background-color: red;
+}
+
+.alert {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.alert.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+

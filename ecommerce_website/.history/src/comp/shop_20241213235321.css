@@ -1,0 +1,50 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+
+}
+.shop
+{
+    width: 100%;
+    padding: 20px 30px;
+}
+.shop h2
+{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    letter-spacing: 1px;
+    color: #232323;
+    font-size: 32px;
+    font-weight: 300;
+}
+.shop p
+{
+    margin-top: 5px;
+    color: #8a8a8a;
+    font-size: 14px;
+    font-weight: 300;
+}
+.shop .container
+{
+    max-width: 100%;
+    display: flex;
+    margin-top: 20px;
+}
+.shop .container .left_box
+{ 
+    width: 25%;  
+}
+.shop .container .left_box .category 
+{
+    border: 3px solid #f6f6f6;
+    width: 100%;
+}
+.shop .container .left_box .category .header
+{
+    max-width: 100%;
+    padding: 10px 20px;
+    background: #f6f6f6;
+}

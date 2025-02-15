@@ -1,0 +1,35 @@
+.low-stock {
+    background-color: #ffcccc; /* Rouge pour les stocks bas */
+  }
+  
+  .approaching-stock {
+    background-color: #fff3cd; /* Jaune pour les stocks approchant le seuil */
+  }
+  
+  .sufficient-stock {
+    background-color: #d4edda; /* Vert pour les stocks suffisants */
+  }
+  
+  .filter-buttons {
+    margin-bottom: 20px;
+  }
+  
+  .filter-buttons button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .low-stock-button {
+    background-color: #ffcccc;
+  }
+  
+  .approaching-stock-button {
+    background-color: #fff3cd;
+  }
+  
+  .sufficient-stock-button {
+    background-color: #d4edda;
+  }
+  

@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: pop;
+    flex-direction: column;
+}
+.main .head{
+    text-align: center;
+}
+.main .head .head_1{
+    font-size: 30px;
+    font-weight: 600;
+    color: #333;
+}
+.main .head .head_1 span{
+    color: #ff4732;
+}
+.main .head .head_2{
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-top: 3px;
+}
+.main  ul{
+    display: flex;
+    margin-top: 80px;
+}
+.main ul li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main  ul li .icon{
+    font-size: 35px;
+    color: #ff4732;
+    margin: 0 60px;
+}
+.main ul li .text{
+    font-size: 14px;
+    font-weight: 600;
+    color: #ff4732;
+}
+
+/* Progress Div Css  */
+
+.main ul li .progress{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(68, 68, 68, 0.781);
+    margin: 14px 0;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+.progress::after{
+    content: " ";
+    position: absolute;
+    width: 125px;
+    height: 5px;
+    background-color: rgba(68, 68, 68, 0.781);
+    right: 30px;
+}
+.one::after{
+    width: 0;
+    height: 0;
+}
+.main ul li .progress .ul li{
+    display: none;
+}
+.main ul li .progress p{
+    font-size: 13px;
+}
+
+/* Active Css  */
+
+.main ul li .active{
+    background-color: #ff4732;
+    display: grid;
+    place-items: center;
+}
+li .active::after{
+    background-color: #ff4732;
+}
+.main ul li .active p{
+    display: none;
+}
+.main ul li .active .ul li{
+    font-size: 20px;
+    display: flex;
+}
+
+
+/* Responsive Css  */
+
+@media (max-width: 980px) {
+    .main ul{
+        flex-direction: column;
+    }
+    .main ul li{
+        flex-direction: row;
+    }
+    .main ul li .progress{
+        margin: 0 30px;
+    }
+    .progress::after{
+        width: 5px;
+        height: 55px;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+    .one::after{
+        height: 0;
+    }
+    .main ul li .icon{
+        margin: 15px 0;
+    }
+}
+
+@media (max-width:600px) {
+    .head .head_1{
+        font-size: 24px;
+    }
+    .head .head_2{
+        font-size: 16px;
+    }
+}
+

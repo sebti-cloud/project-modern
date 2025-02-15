@@ -1,0 +1,140 @@
+/* Style pour la navigation */
+.admin-dashboard nav {
+    background-color: #2c3e50;
+    padding: 15px;
+}
+
+.admin-dashboard nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.admin-dashboard nav ul li {
+    margin: 0 10px;
+}
+
+.admin-dashboard nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.admin-dashboard nav ul li a:hover {
+    color: #3498db;
+}
+
+/* Style général pour l'interface admin */
+.admin-dashboard {
+    font-family: Arial, sans-serif;
+    color: #34495e;
+    margin: 20px;
+}
+
+h1, h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+}
+
+h2.orders-header {
+    color: #e74c3c; /* Rouge pour Orders */
+    border-bottom: 2px solid #e74c3c;
+}
+
+h2.products-header {
+    color: #3498db; /* Bleu pour Products */
+    border-bottom: 2px solid #3498db;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+button.validate {
+    background-color: #27ae60; /* Vert pour Validate */
+}
+
+button.delete {
+    background-color: #e74c3c; /* Rouge pour Delete */
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+button.validate:hover {
+    background-color: #2ecc71; /* Vert plus clair au survol */
+}
+
+button.delete:hover {
+    background-color: #c0392b; /* Rouge plus foncé au survol */
+}
+
+/* Style des formulaires */
+form input[type="text"], form input[type="number"], form input[type="file"] {
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: calc(33% - 20px);
+}
+
+form button {
+    background-color: #27ae60;
+    margin-top: 10px;
+}
+
+form button:hover {
+    background-color: #2ecc71;
+}
+
+/* Style des tableaux */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table thead {
+    background-color: #2c3e50;
+    color: white;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tbody tr:hover {
+    background-color: #eaeaea;
+}
+
+table img {
+    border-radius: 5px;
+}
+
+/* Style des messages */
+.alert-success {
+    color: #27ae60;
+}
+
+.alert-danger {
+    color: #e74c3c;
+}

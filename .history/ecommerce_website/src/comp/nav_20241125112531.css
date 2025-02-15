@@ -1,0 +1,33 @@
+*
+
+{
+    margin: 0;
+    padding : 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.header
+{
+    width: 100%;
+}
+.header .top_header
+{
+    max-width: 100%;
+    display: flex;
+    padding: 10px 10px;
+    background: #f6f7f8;
+
+}
+.header .top_header .icon
+{
+    margin-left: 20px;
+    color: #ababab;
+    font-size: 19px;
+}
+.header .top_header .icon p
+{
+    margin-left: 10px;
+    color: #8a8a8a;
+
+}
+.header .top_header

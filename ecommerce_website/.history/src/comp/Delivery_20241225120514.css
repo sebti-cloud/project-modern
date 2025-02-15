@@ -1,0 +1,74 @@
+.delivery {
+    width: 100%;
+    padding: 20px;
+}
+
+.banner {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px 0;
+}
+
+.banner h2 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.banner p {
+    font-size: 16px;
+}
+
+.options, .tracking, .faq, .contact {
+    margin-top: 40px;
+}
+
+.options h3, .tracking h3, .faq h3, .contact h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.options ul, .faq ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.options li, .faq li {
+    margin-bottom: 20px;
+}
+
+.options li h4, .faq li h4 {
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.tracking input {
+    padding: 10px;
+    width: calc(100% - 22px);
+    margin-right: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+}
+
+.tracking button {
+    padding: 10px 20px;
+    background-color: #ff4732;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tracking button:hover {
+    background-color: #e03c2f;
+}
+
+.tracking-info {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.contact a {
+    color: #ff4732;
+    text-decoration: none;
+}

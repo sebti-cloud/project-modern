@@ -1,0 +1,436 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.shop {
+    width: 100%;
+    padding: 20px 30px;
+}
+.shop h2 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #232323;
+    font-size: 32px;
+    font-weight: 300;
+}
+.shop p {
+    margin-top: 5px;
+    color: #8a8a8a;
+    font-size: 14px;
+    font-weight: 300;
+}
+.shop .container {
+    max-width: 100%; 
+    display: flex;
+    margin-top: 20px;
+}
+.shop .container .left_box { 
+    width: 25%;  
+}
+.shop .container .left_box .category {
+    border: 3px solid #f6f6f6;
+    width: 250px;
+}
+.shop .container .left_box .category .header {
+    max-width: 100%;
+    padding: 10px 20px;
+    background: #f6f6f6;
+}
+.shop .container .left_box .category .header h3 {
+    font-size: 16px;
+    color: #232323;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.shop .container .left_box .category .box {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 20px;
+}
+.shop .container .left_box .category .box ul {
+    max-width: 100%;
+}
+.shop .container .left_box .category .box ul li {
+    list-style: none;
+    margin-left: 10px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #8a8a8a;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.shop .container .left_box .category .box ul li:hover {
+    color: #232323;
+}
+.shop .container .left_box .banner {
+    margin-top: 20px;
+    width: 250px;
+}
+.shop .container .left_box .banner .img_box img {
+    width: 100%;
+    object-fit: cover;
+}
+.shop .container .right_box {
+    width: 74%;
+}
+.shop .container .banner {
+    width: 100%;
+    margin: 15px;
+}
+
+/* Styles existants */
+.shop .container .right_box .banner .img_box img {
+    width: 100%;
+    object-fit: cover;
+}
+.shop .container .right_box .product_box {
+    max-width: 100%;
+    padding: 10px 10px;
+}
+
+.shop .container .right_box .product_box h2 {
+    color: #232323;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.shop .container .right_box .product_box .product_container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.shop .container .right_box .product_box .product_container .box {
+    padding: 10px 10px;
+    width: 270px;
+    height: 390px;
+    overflow: hidden;
+    border: 3px solid #f6f6f6;
+    margin-left: 15px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* Fixer la taille des images dans la boîte */
+/* shop.css */
+
+/* Fixer la taille des images dans la boîte */
+/* Fixer la taille des images dans la boîte */
+.shop .container .right_box .product_box .product_container .box .img_box {
+    width: 100%;
+    padding: 0;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.shop .container .right_box .product_box .product_container .box .img_box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1; /* S'assurer que l'image apparaît correctement */
+}
+
+/* Styles pour le conteneur slick-list pour s'assurer qu'il prend toute la place disponible */
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 100%; /* Assurez-vous que la largeur est de 100% */
+    height: 100%; /* Ajoutez cette ligne pour s'assurer que la hauteur est de 100% */
+    z-index: 0; /* Fixer le z-index pour éviter les superpositions */
+}
+
+/* Fixer la hauteur des éléments slick-slide pour qu'ils remplissent toute la boîte d'image */
+.slick-slide {
+    height: 100%;
+    z-index: 0; /* Fixer le z-index pour éviter les superpositions */
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Icônes (œil et cœur) */
+.shop .container .right_box .product_box .product_container .box .img_box .icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transform: translateY(-50%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+}
+
+/* Apparition des icônes au survol */
+.shop .container .right_box .product_box .product_container .box .img_box:hover .icon {
+    opacity: 1; 
+    transform: translateY(0);
+}
+
+/* Styles des icônes */
+.shop .container .right_box .product_box .product_container .box .img_box .icon li {
+    list-style: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px;
+    margin: 5px;
+    color: #cd1e76;
+    background: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 30%;
+}
+
+.shop .container .right_box .product_box .product_container .box .img_box .icon li:hover {
+    color: #fff;
+    background: #cd1e76;
+}
+
+.shop .container .right_box .product_box .product_container .box .detail {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.shop .container .right_box .product_box .product_container .box .detail h3 {
+    text-align: center;
+    color: #232323;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.shop .container .right_box .product_box .product_container .box .detail p {
+    margin-top: 5px;
+    text-align: center;
+    color: #cd1e76;
+    font-size: 16px;
+}
+
+/* Bouton "Add to Cart" toujours visible */
+.shop .container .right_box .product_box .product_container .box .detail button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    color: #232323;
+    background: #fed700;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+    display: inline-block; /* Assurez-vous que le bouton est en ligne */
+}
+
+.shop .container .right_box .product_box .product_container .box .detail button:hover {
+    color: #fed700;
+    background: #232323;
+}
+/* Styles pour la vue détaillée du produit */
+.product_detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    max-height: 90%;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.product_detail .close_btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.product_detail .container {
+    width: 100%;
+    display: flex;
+}
+
+.product_detail .img_box {
+    width: 100%;
+    max-width: 200px;
+    padding: 95px 0;
+    text-align: center;
+}
+
+.product_detail .img_box img {
+    max-width: 100%;
+    max-height: 300px; /* Limite la hauteur maximale de l'image */
+    height: auto; /* Garde les proportions de l'image */
+    border-radius: 10px;
+    object-fit: cover; /* Ajuste l'image pour qu'elle s'adapte bien */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product_detail .info {
+    text-align: center;
+}
+
+.product_detail .info h4 {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.product_detail .info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.product_detail .container .info p {
+    margin-top: 10px;
+    color: #8a8a8a;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.product_detail .info h3 {
+    font-size: 1.25rem;
+    color: #e74c3c;
+    margin-bottom: 20px;
+}
+
+.product_detail .info button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product_detail .info button:hover {
+    background-color: #2980b9;
+}
+
+.cart-icon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #ff729d;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.cart-icon svg {
+    font-size: 28px; /* Augmenter la taille de l'icône */
+}
+
+.cart-count {
+    margin-left: 5px;
+    font-size: 18px; /* Augmenter la taille du compteur */
+    font-weight: bold;
+}
+
+/* shop.css */
+
+/* Suite du CSS... */
+
+/* shop.css */
+
+/* Ajout pour les points de navigation */
+/* shop.css */
+
+/* Ajout pour les points de navigation */
+.slick-dots {
+    position: absolute; /* Assurez-vous qu'ils sont positionnés de manière absolue */
+    bottom: 10px; /* Ajustez selon vos besoins pour les placer juste sous l'image */
+    left: 50%; /* Centrez les points horizontalement */
+    transform: translateX(-50%); /* Centrez les points horizontalement */
+    display: block;
+    width: auto; /* Ajustez la largeur pour s'adapter au contenu */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    z-index: 2; /* S'assurer qu'ils apparaissent au-dessus */
+  }
+  
+  .slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+  }
+  
+  .slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: 0.25;
+    color: black;
+  }
+  
+  .slick-dots li.slick-active button:before {
+    opacity: 0.75;
+    color: black;
+  }
+  
